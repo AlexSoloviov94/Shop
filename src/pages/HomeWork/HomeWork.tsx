@@ -20,20 +20,20 @@ const HomeWork = (props: Props) => {
         setTotal((prevTotal) => prevTotal + price)
     }, [])
 
-    const onChangeCurrencyToUSD = useCallback(() => {
-        setCurrencyType('USD')
-        setExchangeRate(1)
-    }, [])
+    const onChangeCurrencyToUSD = () => {
+    setCurrencyType('USD')
+    setExchangeRate(1)
+}
 
-    const onChangeCurrencyToUAH = useCallback(() => {
-        setCurrencyType('UAH')
-        setExchangeRate(40)
-    }, [])
+const onChangeCurrencyToUAH = () => {
+    setCurrencyType('UAH')
+    setExchangeRate(40)
+}
 
-    const onChangeCurrencyToEUR = useCallback(() => {
-        setCurrencyType('EUR')
-        setExchangeRate(0.94)
-    }, [])
+const onChangeCurrencyToEUR = () => {
+    setCurrencyType('EUR')
+    setExchangeRate(0.94)
+}
 
     return (
         <>
