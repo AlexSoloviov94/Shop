@@ -16,9 +16,9 @@ const HomeWork = (props: Props) => {
 
     const [total, setTotal] = useState<number>(0)
 
-    const totalAdd = useCallback((price: number) => {
-        setTotal((prevTotal) => prevTotal + price)
-    }, [])
+    const totalAdd = (price: number) => {
+    setTotal((prevTotal) => prevTotal + price)
+}
 
     const onChangeCurrencyToUSD = () => {
     setCurrencyType('USD')
